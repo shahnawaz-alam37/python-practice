@@ -114,3 +114,5 @@ import random
 li = ['a', 'b', 'c', 'd', 'e',]
 leader = (random.choice(li))
 print(leader)
+
+print(random.randint(1, 10))
