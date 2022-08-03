@@ -77,13 +77,25 @@
 #     print(f"{x}:{y}")
 #"""                exception handling                """
 
-try:
-    a = int(input("Enter a:"))
-    b = int(input("Enter b:"))    
-    c = a/b
-    print(c)
+# try:
+#     a = int(input("Enter a:"))
+#     b = int(input("Enter b:"))    
+#     c = a/b
+#     print(c)
     
-except ZeroDivisionError:
-    print("Invalid division")
-except ValueError:
-    print("Invalid value")
+# except ZeroDivisionError:
+#     print("Invalid division")
+# except ValueError:
+#     print("Invalid value")
+
+#---------------------class methods------------------------
+class Employee:
+    def __init__(self,name):
+        self.name = name
+    def greeter(self):
+        print(f"hello! {self.name}")
+
+
+name = input("Name: ")
+obj = Employee(name)
+obj.greeter()
