@@ -110,9 +110,23 @@
 
 #------------------generating random numbers-----------------------------
 
-import random
-li = ['a', 'b', 'c', 'd', 'e',]
-leader = (random.choice(li))
-print(leader)
+# import random
+# li = ['a', 'b', 'c', 'd', 'e',]
+# leader = (random.choice(li))
+# print(leader)
 
-print(random.randint(1, 10))
+# print(random.randint(1, 10))
+
+i = 1
+while i <= 5:
+    print('*' * i)
+    i +=1
+
+# for x in range(5,0,-1):          
+#     for y in range(1,x+1):  #reverse triangle
+#         print("*",end="")     
+#     print("")
+for x in range(1,6):          
+    for y in range(0,x):  
+        print("*",end="")     
+    print("")
