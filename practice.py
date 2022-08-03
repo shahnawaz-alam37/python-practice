@@ -71,7 +71,19 @@
 #     name = "shahnawaz"
 # obj = operation()
 # obj.greeter()
-# print(obj.name)
-Employee={"Name":"John","Age":29,"Salary":25000,"Company":"GOOGLE","Name":"John"}    
-for x,y in Employee.items():    
-    print(f"{x}:{y}")
+# # print(obj.name)
+# Employee={"Name":"John","Age":29,"Salary":25000,"Company":"GOOGLE","Name":"John"}    
+# for x,y in Employee.items():    
+#     print(f"{x}:{y}")
+#"""                exception handling                """
+
+try:
+    a = int(input("Enter a:"))
+    b = int(input("Enter b:"))    
+    c = a/b
+    print(c)
+    
+except ZeroDivisionError:
+    print("Invalid division")
+except ValueError:
+    print("Invalid value")
