@@ -88,21 +88,29 @@
 # except ValueError:
 #     print("Invalid value")
 
-#---------------------class methods------------------------
-class Employee:
-    def __init__(self,name):
-        self.name = name
-    def greeter(self):
-        print(f"hello! {self.name}")
+# #---------------------class methods------------------------
+# class Employee:
+#     def __init__(self,name):
+#         self.name = name
+#     def greeter(self):
+#         print(f"hello! {self.name}")
 
-class Work(Employee):                   #single inheritance
-    def __init__(self,hrs_spent):
-        self.hrs_spent = hrs_spent
-    def print_hrs_spent(self):
-        print(f"{name} has spent {self.hrs_spent} hours at the work")
+# class Work(Employee):                   #single inheritance
+#     def __init__(self,hrs_spent):
+#         self.hrs_spent = hrs_spent
+#     def print_hrs_spent(self):
+#         print(f"{name} has spent {self.hrs_spent} hours at the work")
 
-name = input("Name:")
-emp_obj = Employee(name)
-hrs_workded = input("HRS Workded:")
-work_obj = Work(hrs_workded)
-work_obj.print_hrs_spent()
+# name = input("Name:")
+# emp_obj = Employee(name)
+# hrs_workded = input("HRS Workded:")
+# work_obj = Work(hrs_workded)
+# work_obj.print_hrs_spent()
+
+
+#------------------generating random numbers-----------------------------
+
+import random
+li = ['a', 'b', 'c', 'd', 'e',]
+leader = (random.choice(li))
+print(leader)
