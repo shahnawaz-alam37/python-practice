@@ -95,7 +95,14 @@ class Employee:
     def greeter(self):
         print(f"hello! {self.name}")
 
+class Work(Employee):                   #single inheritance
+    def __init__(self,hrs_spent):
+        self.hrs_spent = hrs_spent
+    def print_hrs_spent(self):
+        print(f"{name} has spent {self.hrs_spent} hours at the work")
 
-name = input("Name: ")
-obj = Employee(name)
-obj.greeter()
+name = input("Name:")
+emp_obj = Employee(name)
+hrs_workded = input("HRS Workded:")
+work_obj = Work(hrs_workded)
+work_obj.print_hrs_spent()
