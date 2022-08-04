@@ -7,6 +7,6 @@ def max_num(num):
 
 """
 Returns the maximum number of elements in a list.
-:param num: The number of elements in the list.
+:param num: elements in the list.
 :return: The maximum number of elements in the list.
 """
