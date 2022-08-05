@@ -117,16 +117,28 @@
 
 # print(random.randint(1, 10))
 
-i = 1
-while i <= 5:
-    print('*' * i)
-    i +=1
+# i = 1
+# while i <= 5:
+#     print('*' * i)
+#     i +=1
 
 # for x in range(5,0,-1):          
 #     for y in range(1,x+1):  #reverse triangle
 #         print("*",end="")     
 #     print("")
-for x in range(1,6):          
-    for y in range(0,x):  
-        print("*",end="")     
-    print("")
+# for x in range(1,6):          
+#     for y in range(0,x):  
+#         print("*",end="")     
+#     print("")
+#------------------number guessing game-------------------
+secret_number = 37
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input(">"))
+    guess_count += 1
+    if guess == secret_number:
+        print("you won!")
+        break
+else:
+    print("wrong guesses")
